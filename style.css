@@ -1,0 +1,18 @@
+.isowikitweaks-list ul {
+  list-style: none;
+  padding: 0;
+}
+.isowikitweaks-list  li {
+  padding-left: 1.3em;
+}
+
+.isowikitweaks-list li:before {
+  display: inline-block;
+  float: left;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+
+.isowikitweaks-list-style-arrow li:before {
+  content: "↳";
+}
