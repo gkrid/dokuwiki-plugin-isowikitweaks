@@ -2,17 +2,21 @@
   list-style: none;
   padding: 0;
 }
-.isowikitweaks-list  li {
+.isowikitweaks-list ul li {
   padding-left: 1.3em;
 }
 
-.isowikitweaks-list li:before {
+.isowikitweaks-list ul li:before {
   display: inline-block;
   float: left;
   margin-left: -1.3em; /* same as padding-left set on li */
   width: 1.3em; /* same as padding-left set on li */
 }
 
-.isowikitweaks-list-style-arrow li:before {
+.isowikitweaks-list-style-arrow ul > li:before {
+  content: "⇨";
+}
+
+.isowikitweaks-list-style-arrow ul li li:before {
   content: "↳";
 }
