@@ -8,6 +8,7 @@
 
 .isowikitweaks-list ul li:before {
   display: inline-block;
+  color: #000;
   float: left;
   margin-left: -1.3em; /* same as padding-left set on li */
   width: 1.3em; /* same as padding-left set on li */
