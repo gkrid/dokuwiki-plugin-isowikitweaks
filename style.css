@@ -21,3 +21,8 @@
 .isowikitweaks-list-style-arrow ul li li:before {
   content: "↳";
 }
+
+.isowikitweaks-table-no-border-horizontal td {
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+}
