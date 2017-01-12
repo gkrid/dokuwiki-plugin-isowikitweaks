@@ -26,3 +26,7 @@
 	border-top: 0 !important;
 	border-bottom: 0 !important;
 }
+
+.isowikitweaks-table-border-hide-empty td {
+	border-bottom: 0;
+}

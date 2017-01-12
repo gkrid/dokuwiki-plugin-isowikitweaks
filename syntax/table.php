@@ -15,6 +15,7 @@ class syntax_plugin_isowikitweaks_table extends DokuWiki_Syntax_Plugin {
 	public function connectTo($mode) {
 		$this->Lexer->addEntryPattern('<table.*?>(?=.*?</table>)',$mode,'plugin_isowikitweaks_table');
 	}
+	
 	public function postConnect() {
 		$this->Lexer->addExitPattern('</table>','plugin_isowikitweaks_table');
 	}
@@ -23,7 +24,7 @@ class syntax_plugin_isowikitweaks_table extends DokuWiki_Syntax_Plugin {
 	/**
 	 * Handle the match
 	 */
-	public function handle($match, $state, $pos, Doku_Handler $handler){
+	public function handle($match, $state, $pos, Doku_Handler $handler) {
 		switch ($state) {
 			case DOKU_LEXER_ENTER:
 				$attrs = $this->element_attributes('table', $match);
@@ -47,8 +48,14 @@ class syntax_plugin_isowikitweaks_table extends DokuWiki_Syntax_Plugin {
 			case DOKU_LEXER_ENTER :
 				$classes = array();
 				
-				if (isset($match['border-horizontal']) && $match['border-horizontal'] === '0') {
+				if (isset($match['border-horizontal']) &&
+					$match['border-horizontal'] === '0') {
 					$classes[] = 'isowikitweaks-table-no-border-horizontal';
+				}
+				
+				if (isset($match['border-hide-empty']) &&
+					$match['border-hide-empty'] === 'true') {
+					$classes[] = 'isowikitweaks-table-border-hide-empty';
 				}
 				
 				$class = '';
