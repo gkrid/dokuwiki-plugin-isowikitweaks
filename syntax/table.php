@@ -57,6 +57,11 @@ class syntax_plugin_isowikitweaks_table extends DokuWiki_Syntax_Plugin {
 					$match['border-hide-empty'] === 'true') {
 					$classes[] = 'isowikitweaks-table-border-hide-empty';
 				}
+
+                if (isset($match['merge-duplicates']) &&
+                    $match['merge-duplicates'] === 'true') {
+                    $classes[] = 'isowikitweaks-merge-duplicates';
+                }
 				
 				$class = '';
 				if (count($classes) > 0) {

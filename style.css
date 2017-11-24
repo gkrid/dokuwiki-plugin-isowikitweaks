@@ -30,3 +30,7 @@
 .isowikitweaks-table-border-hide-empty td {
 	border-bottom: 0;
 }
+
+.isowikitweaks-merge-duplicates td {
+    border-bottom: 0;
+}
