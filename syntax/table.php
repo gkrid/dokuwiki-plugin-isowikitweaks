@@ -10,7 +10,7 @@ if(!defined('DOKU_INC')) die();
 class syntax_plugin_isowikitweaks_table extends DokuWiki_Syntax_Plugin {
  
 	public function getType(){ return 'container'; }
-	public function getAllowedTypes() { return array('container'); }   
+	public function getAllowedTypes() { return array('container', 'substition'); }
 	public function getSort(){ return 158; }
 	public function connectTo($mode) {
 		$this->Lexer->addEntryPattern('<table.*?>(?=.*?</table>)',$mode,'plugin_isowikitweaks_table');

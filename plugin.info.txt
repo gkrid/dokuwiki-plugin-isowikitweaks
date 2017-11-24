@@ -1,7 +1,7 @@
 base isowikitweaks
 author Szymon Olewniczak
-email (my first name) [at] imz [dot] re
-date 2017-01-10
+email solewniczak@rid.pl
+date 2017-11-24
 name isowikitweaks
 desc
 url
