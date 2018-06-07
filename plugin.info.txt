@@ -1,7 +1,7 @@
 base isowikitweaks
 author Szymon Olewniczak
-email solewniczak@rid.pl
-date 2017-11-24
+email it@rid.pl
+date 2018-06-07
 name isowikitweaks
-desc
+desc Some isowiki enhacements
 url
