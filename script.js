@@ -35,5 +35,15 @@ jQuery(function () {
 
         table_border_hide_empty($this);
     });
+
+    jQuery(".isowikitweaks-rotate").each(function () {
+        var $this = jQuery(this);
+        var cells = $this.data('isowikitweaks-rotate');
+        var $table = $this.find("table");
+        jQuery.each(cells, function (index, cell) {
+            var $cell = $table.find("tr").eq(cell.row).find("td,th").eq(cell.col);
+            $cell.wrapInner('<div class="rotate"></div>');
+        });
+    });
 });
 

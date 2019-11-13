@@ -34,3 +34,9 @@
 .isowikitweaks-merge-duplicates td {
     border-bottom: 0;
 }
+
+.isowikitweaks-rotate div.rotate {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+}
