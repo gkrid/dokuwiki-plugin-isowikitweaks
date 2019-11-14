@@ -35,6 +35,10 @@
     border-bottom: 0;
 }
 
+.isowikitweaks-rotate .rotate-cell {
+    vertical-align: bottom;
+}
+
 .isowikitweaks-rotate div.rotate {
     writing-mode: vertical-rl;
     transform: rotate(180deg);

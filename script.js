@@ -42,6 +42,7 @@ jQuery(function () {
         var $table = $this.find("table");
         jQuery.each(cells, function (index, cell) {
             var $cell = $table.find("tr").eq(cell.row).find("td,th").eq(cell.col);
+            $cell.addClass("rotate-cell");
             $cell.wrapInner('<div class="rotate"></div>');
         });
     });
